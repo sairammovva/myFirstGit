@@ -1,0 +1,23 @@
+.container{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTMgaGwWpxsUDnzwMFxbWFmftVv6NzbebFuaQ&usqp=CAU);
+
+}
+
+input {
+  margin-right: 25px;
+}
+p,h1 {
+  margin: 25px 0 25px 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+}
+button {
+  margin-right: 25px;
+}
+span {
+  font-size: 120%;
+}
+.white {
+  color: white;
+}

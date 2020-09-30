@@ -1,0 +1,29 @@
+<h1>Simple Calculator using Angular</h1>
+<div class="container">
+  <div class="row justify-content-center align-middle pb-4">
+
+    <input class="align-self-start" type="number" name="n1" [(ngModel)]="n1">
+    <input class="align-self-start" type="number" name="n2" [(ngModel)]="n2">
+
+    <div class="btn-group-vertical mr-4">
+      <button type="button" class="btn btn-primary" (click)="add()">Add</button>
+      <button type="button" class="btn btn-secondary" (click)="sub()">Subtract</button>
+      <button type="button" class="btn btn-success" (click)="mul()">Multiply</button>
+      <button type="button" class="btn btn-warning" (click)="div()">Divide</button>
+    </div>
+
+  </div>
+
+  <div>
+
+    <div class="row justify-content-center align-middle">
+      <span class="white bg-dark border p-0 m-5">
+        The {{operation}} of <span class="badge badge-success text-wrap">{{n1}}</span> and <span
+          class="badge badge-success text-wrap">{{n2}}</span> is <span class="badge badge-primary text-wrap"
+          style="width: 6rem;">{{n3}}</span>
+      </span>
+    </div>
+
+  </div>
+
+</div>
