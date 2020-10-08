@@ -9,6 +9,7 @@ import { Empcomp2Component } from './empcomp2/empcomp2.component';
 import { Sibling1Component } from './sibling1/sibling1.component';
 import { Sibling2Component } from './sibling2/sibling2.component';
 import { ChildComponent } from './child/child.component';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -25,8 +26,9 @@ import { ChildComponent } from './child/child.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    DataService
+  ],
   bootstrap: [AppComponent]
-  //bootstrap: [HeaderComponent]
 })
 export class AppModule { }

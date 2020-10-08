@@ -3,11 +3,22 @@
   <h1>Parent Component</h1>
   <app-child (messageEvent = "recieveMessage($event)")></app-child>
 
-</div>-->
+</div>
 <div class="container">
   <div class="d-flex bg-success p-5 m-2"><app-child [text]="text1"></app-child></div>
   <div class="d-flex bg-primary p-5 m-2"><app-child [text]="text2"></app-child></div>
   <div class="d-flex bg-secondary p-5 m-2"><app-child [text]="text3"></app-child></div>
   <div class="d-flex bg-danger p-5 m-2"><app-child [text]="text4"></app-child></div>
   <div class="d-flex bg-warning p-5 m-2"><app-child [text]="text5"></app-child></div>
+</div>-->
+<br>
+<div class="container bg-secondary p-5">
+<div class="m-5 "><h1>Interviewer</h1></div>
+
+  <div class="m-5"><button class="btn btn-lg bg-warning" (click)="greetCandidate()">Greet Cadidate</button></div>
+  <div class="m-5"><button class="btn btn-lg bg-light" (click)="askCandidate()">Ask cadidate to tell about himself</button></div>
+
+<div class="bg-success m-5">
+<app-child></app-child>
+</div>
 </div>
